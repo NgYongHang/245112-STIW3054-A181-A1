@@ -69,6 +69,7 @@ public class StoreToExcel {
 
         try (FileOutputStream write = new FileOutputStream(CONSTANT_EXCEL)) {
             myWorkBook.write(write);
+            write.close();
         }
            
     }
